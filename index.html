@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Lucas Bustamante | Estudiante de Inteligencia Artificial</title>
-  <meta name="description" content="Página personal de Lucas Bustamante, estudiante de Inteligencia Artificial. Información personal, estudios, proyectos, Instagram y correo institucional.">
+  <meta name="description" content="Página personal de Lucas Bustamante, estudiante de Inteligencia Artificial. Información personal, estudios, proyectos, Instagram, LinkedIn y correo institucional.">
 
   <style>
     * {
@@ -162,6 +162,60 @@
       background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
     }
 
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .link-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(147, 197, 253, 0.3);
+      border-radius: 20px;
+      padding: 22px;
+      transition: 0.3s;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      border-color: #60a5fa;
+      box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+    }
+
+    .link-card h3 {
+      margin-top: 0;
+      color: #bfdbfe;
+      font-size: 21px;
+    }
+
+    .link-card p {
+      font-size: 15px;
+      color: #cbd5e1;
+    }
+
+    .link-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: rgba(37, 99, 235, 0.35);
+      color: #ffffff;
+      border: 1px solid rgba(147, 197, 253, 0.45);
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .link-card a:hover {
+      background: rgba(37, 99, 235, 0.7);
+    }
+
+    .nota {
+      font-size: 15px;
+      color: #bfdbfe;
+      margin-top: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -196,6 +250,7 @@
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#estudios">Estudios</a>
     <a href="#habilidades">Habilidades</a>
+    <a href="#red-profesional">LinkedIn</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -217,7 +272,8 @@
       </p>
 
       <div class="buttons">
-        <a href="https://www.instagram.com/xylbmzx" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/xylbmzx" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/lucas-bustamante-b34251409" target="_blank" rel="noopener noreferrer">Mi LinkedIn</a>
         <a href="mailto:lucas.bustamante@ucsp.edu.pe">Correo institucional</a>
       </div>
     </div>
@@ -280,14 +336,75 @@
       </p>
     </section>
 
+    <section class="card" id="red-profesional">
+      <h2>Red profesional</h2>
+
+      <p>
+        En esta sección puedo colocar mi perfil profesional de LinkedIn y también
+        enlaces de docentes o referentes académicos relacionados con Computación
+        e Inteligencia Artificial en la UCSP.
+      </p>
+
+      <div class="link-grid">
+
+        <div class="link-card">
+          <h3>Lucas Bustamante</h3>
+          <p>Mi perfil profesional como estudiante de Inteligencia Artificial.</p>
+          <a href="https://www.linkedin.com/in/TU-USUARIO-LINKEDIN/" target="_blank" rel="noopener noreferrer">Ver mi LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>UCSP</h3>
+          <p>Página oficial de la Universidad Católica San Pablo en LinkedIn.</p>
+          <a href="https://www.linkedin.com/school/universidad-catolica-san-pablo/" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Daniel Alexis Gutiérrez Pachas</h3>
+          <p>Docente / Departamento de Computación UCSP.</p>
+          <a href="https://pe.linkedin.com/in/daniel-alexis-gutierrez-pachas-7938b2135" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>José Eduardo Ochoa Luna</h3>
+          <p>Docente e investigador vinculado a Ciencia de Datos e IA.</p>
+          <a href="https://pe.linkedin.com/in/jos%C3%A9-eduardo-ochoa-luna-6451b78" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Julissa Villanueva Llerena</h3>
+          <p>Docente vinculada a Inteligencia Artificial y Machine Learning.</p>
+          <a href="https://pe.linkedin.com/in/julissa-villanueva-llerena" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Regina Paola Ticona Herrera</h3>
+          <p>Docente UCSP e investigadora.</p>
+          <a href="https://fr.linkedin.com/in/regina-paola-ticona-herrera-10528a48" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Julio Omar Santisteban Pablo</h3>
+          <p>Docente UCSP vinculado a PLN y servicios web.</p>
+          <a href="https://au.linkedin.com/in/santisteban" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+        </div>
+
+      </div>
+
+      <p class="nota">
+        Nota: puedes cambiar, quitar o agregar docentes según los profesores que tengas en tus cursos.
+      </p>
+    </section>
+
     <section class="card" id="contacto">
       <h2>Contacto</h2>
       <p>
-        Puedes contactarme mediante mi Instagram o mi correo institucional.
+        Puedes contactarme mediante mi Instagram, mi LinkedIn o mi correo institucional.
       </p>
 
       <div class="buttons">
-        <a href="https://www.instagram.com/xylbmzx" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/xylbmzx" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/lucas-bustamante-b34251409" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:lucas.bustamante@ucsp.edu.pe">Correo institucional</a>
       </div>
     </section>
@@ -300,4 +417,3 @@
 
 </body>
 </html>
-       
